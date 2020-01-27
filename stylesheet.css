@@ -1,0 +1,328 @@
+/* stylesheet.css */
+
+body {
+	background-color: #666259;
+	text-align: center;
+	font-family: Arial, Helvetica, Sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*header-section*/
+/*logo image and opacity*/
+#header-img {
+	margin: 0 auto;
+	height: 70px;
+	float: left;
+	opacity: 0.9;
+}
+
+#header {
+	background-color: white;
+	opacity: 0.9;
+	height: 70px;
+	width: 100%;
+	text-align: right;
+	position: fixed;
+	top: 0px;
+}
+
+/* nav list and logo position */
+/* nav links of each words - horizontal position*/
+.nav li {
+	list-style-type: none;
+	padding: 0px;
+	height: 24px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	display: inline;
+}
+
+/*nav list link font color*/
+.nav li a {
+	color: black;
+	font-size: 15px;
+	font-family: 'Nosifer', cursive;
+	text-decoration: none;
+	line-height: 45px;
+	padding: 5px 15px;
+	opacity: 0.9;
+}
+
+#nav-bar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#nav-bar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*  a hand appears when hovering over the links*/
+#nav-bar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* moved h1 section under nav-bar*/
+.welcome {
+	margin-top: 80px;
+	padding: 10px;
+}
+
+/*submit box email, button and cursor-hand*/
+#email {
+	width: 20%;
+	height: 30px;
+}
+
+.button {
+	background-color: white;
+	/* border: none;
+     */
+	color: black;
+	text-align: center;
+	/* display: inline-block;
+     */
+	font-size: 15px;
+	margin: 10px;
+	cursor: pointer;
+	height: 35px;
+}
+
+h1 {
+	font-family: 'Eater', cursive;
+	font-weight: normal;
+	font-size: 50px;
+}
+
+/*information section*/
+#text {
+	margin-top: 5px;
+	padding: 5px 20px;
+}
+
+h2 {
+	font-family: 'Nosifer', cursive;
+	font-size: 30px;
+}
+
+p {
+	font-size: 20px;
+	text-align: justify;
+	line-height: 1.6;
+	margin: 5px;
+	padding: 5px;
+}
+
+/*video and text float L+R */
+#tedtalk {
+	background-color: #0b5e70;
+  border-color: purple;
+  border-style: solid;
+  box-sizing: border-box;
+	position: relative;	
+  z-index: -1;
+} 
+
+#tedvid {
+	float: right;
+  margin: 20px;
+	padding: 10px;
+	opacity: 0.85;
+}
+
+@media only screen and (max-width: 900px) {
+	#tedtalk {
+		background-color: #472ca8;
+		border-style: solid;
+		border-color: yellow;
+	}
+}
+
+/*  video decoration  */
+#tedvid {
+	float: left;
+	border-width: 10px;
+	border-style: dotted;
+	border-color: orange;
+  position: absolute;
+  margin: 30px;
+}
+
+#tedvid {
+    width: 63%;
+    padding-bottom: 35%; 
+    position: relative;
+}
+
+#video {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 10px;
+}
+
+/*flex - 3 column gifs*/
+/* parent element*/
+#products {
+	max-width: 100%;
+	margin: 15px;
+	padding: 5px;
+	display-direction: column;
+	box-sizing: border-box;
+} 
+} /* do not remove this curly brace*/
+
+/* child element1 - that makes each child element vertical */
+.column {
+	border: 1px solid blue;
+	margin: 1px;
+	padding: 5px;
+}
+
+/* child element2 - gif image size */
+.column {
+	margin: 1px;
+	padding: 5px;
+  width: 100%;
+  padding-bottom: 10%; /* Change this till it fits the dimensions of your video */
+  position: relative;
+  z-index: -1; 
+}
+
+#responsive-image {
+	width: 55%;
+/* 	height: 50%; */
+	margin: 15px;
+	padding: 25px;
+	border: dotted orange 10px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/* child element3 - icon-size up*/
+.extraClass {
+	font-size: 100px;
+	width: 130px;
+	margin-top: 100px;
+	padding: 10 px;
+	float: left;
+}
+
+.prod-txt {
+  margin-top: -170px;
+  padding: 45px;
+}
+
+/* anchor link to outside page  */
+a:visited {
+  color: #ffffff;
+}
+
+/* plant-grid - parent element */
+#grid {
+	margin: 10px;
+	padding: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+/* plant img src id name- used to resize*/
+#gridplant {
+	width: 246px;
+	height: 246px;
+	padding: 10px;
+}
+
+/* flex inside 3 columns, green background color, content, button shape, and it centers when page becomes responsive*/
+.grid-plant {
+	display: flex;
+	flex-direction: column;
+	background-color: #612075;
+	align-items: center;
+	text-align: center;
+	width: 33.33%;
+	margin: 10px;
+	border: 10px solid #180363;
+	border-radius: 10px;
+}
+
+/* name of plant white section on-top of the price. Nested item */
+.grid-plant > .nameofplant {
+	background-color: #02023b;
+	text-align: center;
+	text-transform: uppercase;
+	color: orange;
+	margin-top: 0px;
+	padding: 30px 0px;
+	width: 100%;
+}
+
+/* button yellow/orange effect */
+.grid-plant > button {
+	margin: 20px 20px;
+	background-color: #f1c40f;
+}
+
+/*button changes color on hoover*/
+.grid-plant > button:hover {
+	background-color: red;
+	transition: background-color 1s;
+}
+@media (max-width: 800px) {
+	#grid {
+		flex-direction: column;
+	}
+	
+	.grid-plant {
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}
+
+.footer {
+	font-family: 'Nosifer', cursive;
+	text-align: center;
+	padding-top: 20px;
+	border-width: 10px;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+
+
+
+
+/* notes and resources - 
+for c/leaner CSS - 
+
+info:
+https://stackoverflow.com/questions/4361007/is-there-a-way-to-check-which-css-styles-are-being-used-or-not-used-on-a-web-pag 
+https://www.keycdn.com/blog/remove-unused-css
+
+web tool:
+https://uncss-online.com/
+
+indentation tool - https://codebeautify.org/
+
+code validitator - https://validator.w3.org/
+
+*/
